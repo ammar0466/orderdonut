@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> Order Donut Here </h1>
+
+<form action="/order.php">
+  First name:<br>
+  <input type="text" name="firstname" placeholder="first name">
+  <br><br>
+  Last name:<br>
+  <input type="text" name="lastname" placeholder="last name">
+  <br><br>
+  Address:<br>
+  <input type="text" name="address" placeholder="Address">
+  
+  <br><br>
+  Donut Set : <br>
+  <input type="checkbox" name="set1" value="Bike">Set 1<br>
+	<input type="checkbox" name="set2" value="Car">Set 2 <br><br>
+	
+	Drink:<br>
+	<select name="drink">
+    <option value="coffee">Coffee</option>
+    <option value="coke">Coke</option>
+    <option value="fanta">Fanta</option>
+    <option value="cappucino">Cappucino</option>
+  </select><br>
+  
+  <p>Receipt:<br>
+  <input type="file" name="fileupl"></p>
+  <p>Remark :<br>
+  <textarea rows="4" cols="50" placeholder="Put any remarks or comment">
+
+</textarea></p>
+  
+  
+	<br><br>
+  <input type="submit" value="Submit">
+  
+  
+  
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/order.php".</p>
+
+</body>
+</html>

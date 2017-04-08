@@ -1,0 +1,14 @@
+.container{
+	max-width: 600px;
+	max-height: 100%;
+	background-color: #44ffff;
+	margin-top: 60px;
+	border-radius: 25px;
+}
+fieldset{
+	border-radius: 5px;
+}
+button{
+	background-color: #b84dff;
+	
+}
