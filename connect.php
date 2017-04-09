@@ -1,13 +1,21 @@
 <?php
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 
-	// mysql_connect('localhost','root','') or die("cannot");
-	// mysql_select_db('mudah');
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
 
-	$conn = mysqli_connect('localhost','root','','mudah');
-
-	if (!$conn) {
-		# code...
-		die('Cannot connect to database'.mysqli_connect_error());
-	}
-
+$conn = new mysqli($server, $username, $password, $db);
 ?>
+<!-- <?php
+$url = parse_url(getenv("CLEARDB_DATABASE_URL"));
+
+$server = $url["host"];
+$username = $url["user"];
+$password = $url["pass"];
+$db = substr($url["path"], 1);
+
+$conn = new mysqli($server, $username, $password, $db);
+?> -->
+

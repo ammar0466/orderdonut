@@ -74,12 +74,7 @@ include 'connect.php';
 
 		//mysql_connect($namahost,$namauser,$password)
 
-		$conn=mysqli_connect('localhost','root','','mudah');
-		 if(!$conn){
-		  die('cannot connect to database');
-		}
-
-
+		
 		//INSERT INTO DATABASE
 
 		$sql = "INSERT INTO orderdonut(fname,address,setdonut,drink,receipt,remark) VALUES ('$fname','$address','$setdonut','$drink','$dest','$remark')";
